@@ -1,0 +1,48 @@
+{
+	"name": "app",
+	"version": "0.0.0",
+	"license": "MIT",
+	"scripts": {
+		"start": "npm run build && node app.js",
+		"start:dev": "concurrently \"node app.js\" \"ng serve --host 0.0.0.0 --port 4200 --aot\"",
+		"build:dev": "ng build",
+		"build": "ng build --prod --aot",
+		"lint": "ng lint",
+		"ng": "ng"
+	},
+	"private": true,
+	"dependencies": {
+		"@angular/animations": "^5.0.0",
+		"@angular/cli": "1.6.3",
+		"@angular/common": "^5.0.0",
+		"@angular/compiler": "^5.0.0",
+		"@angular/compiler-cli": "^5.0.0",
+		"@angular/core": "^5.0.0",
+		"@angular/forms": "^5.0.0",
+		"@angular/http": "^5.0.0",
+		"@angular/language-service": "^5.0.0",
+		"@angular/platform-browser": "^5.0.0",
+		"@angular/platform-browser-dynamic": "^5.0.0",
+		"@angular/router": "^5.0.0",
+		"@angular/service-worker": "^5.1.2",
+		"core-js": "^2.4.1",
+		"express": "^4.16.2",
+		"log4js": "^2.4.1",
+		"mysql": "^2.15.0",
+		"node-schedule": "^1.2.5",
+		"rxjs": "^5.5.2",
+		"server": "^1.0.15",
+		"zone.js": "^0.8.14"
+	},
+	"devDependencies": {
+		"@types/jasmine": "~2.5.53",
+		"@types/jasminewd2": "~2.0.2",
+		"@types/node": "~6.0.60",
+		"codelyzer": "^4.0.1",
+		"concurrently": "^3.5.1",
+		"eslint": "^4.14.0",
+		"ts-node": "~3.2.0",
+		"tslint": "~5.7.0",
+		"typescript": "~2.4.2"
+	}
+}
